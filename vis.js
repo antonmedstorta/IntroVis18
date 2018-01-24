@@ -238,10 +238,3 @@
 				})
 		}
 	};
-
-// d3.csv("test.csv")
-
-// 	.get(function(error,data){
-// 		console.log(data[0].CodeRepoSkills);
-// 		var headerNames = d3.keys(data[0]);
-// 	})
