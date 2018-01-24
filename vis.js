@@ -69,9 +69,13 @@
 
 // CODE BELOW CHANGES WHAT SKILL IS VISUALISED, 
 // FOLLOWING A USER BUTTON CLICK
-
+		
 	d3.select("#VizSkills").on("click", function(d) {
-		console.log("Klick på VizSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("VizSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.VizSkills);
@@ -85,7 +89,11 @@
 	});
 
 	d3.select("#StatSkills").on("click", function() {
-		console.log("Klick på StatSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("StatSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.StatSkills);
@@ -99,7 +107,11 @@
 	});
 
 	d3.select("#MathSkills").on("click", function() {
-		console.log("Klick på MathSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("MathSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.MathSkills);
@@ -113,7 +125,11 @@
 	});
 
 	d3.select("#ArtSkills").on("click", function() {
-		console.log("Klick på ArtSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("ArtSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.ArtSkills);
@@ -127,7 +143,11 @@
 	});
 
 	d3.select("#ComputerSkills").on("click", function() {
-		console.log("Klick på ComputerSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("ComputerSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.ComputerSkills);
@@ -141,7 +161,11 @@
 	});
 
 	d3.select("#ProgrammingSkills").on("click", function() {
-		console.log("Klick på ProgrammingSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("ProgrammingSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.ProgrammingSkills);
@@ -155,7 +179,11 @@
 	});
 
 	d3.select("#GraphicSkills").on("click", function() {
-		console.log("Klick på GraphicSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("GraphicSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.GraphicSkills);
@@ -169,7 +197,11 @@
 	});
 
 	d3.select("#HCISkills").on("click", function() {
-		console.log("Klick på HCISkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("HCISkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.HCISkills);
@@ -183,7 +215,11 @@
 	});
 
 	d3.select("#UXSkills").on("click", function() {
-		console.log("Klick på UXSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("UXSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.UXSkills);
@@ -197,7 +233,11 @@
 	});
 
 	d3.select("#CollabSkills").on("click", function() {
-		console.log("Klick på CollabSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("CollabSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.CollabSkills);
@@ -211,7 +251,11 @@
 	});
 
 	d3.select("#CodeRepoSkills").on("click", function() {
-		console.log("Klick på CodeRepoSkills");
+		var buttons = (document.getElementsByClassName("btn btn-primary"));
+		for (i = 0; i < buttons.length; i++) { 
+    		buttons[i].style.backgroundColor = "#007bff";
+		}
+		document.getElementById("CodeRepoSkills").style.backgroundColor = "#1cd760";
 		simulation
 			.force("collision", d3.forceCollide(function(d) {
 				return radiusScale(d.CodeRepoSkills);
@@ -238,3 +282,10 @@
 				})
 		}
 	};
+
+// d3.csv("test.csv")
+
+// 	.get(function(error,data){
+// 		console.log(data[0].CodeRepoSkills);
+// 		var headerNames = d3.keys(data[0]);
+// 	})
