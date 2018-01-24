@@ -1,6 +1,7 @@
 	var width = 870;
 	var height = 600;
-	var currentSkill = "";
+	
+	document.getElementById("VizSkills").style.backgroundColor = "#1cd760";
 
 	var svg = d3.select("#chart")
 		.append("svg")
