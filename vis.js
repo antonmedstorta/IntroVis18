@@ -18,7 +18,7 @@
 	var radiusScale = d3.scaleSqrt().domain([1, 10]).range([10, 35])
 
 	var xForce = d3.forceX(width / 2).strength(0.04)
-	var yForce = d3.forceY(height / 2).strength(0.9)
+	var yForce = d3.forceY(height / 2).strength(0.09)
 	var forceCollision = d3.forceCollide(function(d) { //Function used to set a force deoendent on how big each circle is.
 		return radiusScale(d.VizSkills);
 	});
