@@ -30,7 +30,7 @@
 		.force("collision", forceCollision)
 
 	d3.queue()
-		.defer(d3.csv, "test.csv")
+		.defer(d3.csv, "visData.csv")
 		.await(ready)
 
 	function ready (error, datapoints) {
