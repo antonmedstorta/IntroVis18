@@ -22,7 +22,8 @@
 }
 
 #chart {
-    width: 350px;
+    width: 50%;
+margin: auto;
 }
 
 #cred {
