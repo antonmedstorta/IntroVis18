@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Example</title>
-		<link rel="stylesheet" type="text/css" href="visStyle.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://d3js.org/d3.v4.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
@@ -13,8 +13,8 @@
 		<section class="jumbotron text-center">
 			<div class="container">
 				<h1 id=title>Skill Vizualisation</h1>
-				<p>Each bubble represents a different person. </br>The size of the bubble represents their skill level in a certain area.</br>The bigger the bubble, the more skillful the person claims to be in that area.</br>You're free to choose what skill you would like the size of the bubbles to represent.</p>
-				<p><b>Hover</b> over individual bubbles to see who that bubble represents.</br>
+				<p>Each bubble represents a different person.</br>Please choose what skill you would like the size of the bubbles to represent.</br>The bigger the bubble, the more skillful the person claims to be in that area.</p>
+				<p><b>Hover</b> over indivdual bubbles to see who that bubble represents.</br>
 				<b>Click</b> individual bubbles to see that user's full set of skills.</p></br>
 				<div id="buttons" >
 					<button class="btn btn-primary" id="VizSkills"><i class='fas fa-info'></i></i> Visualisation Skills</button>
@@ -26,21 +26,22 @@
 					<button class="btn btn-primary" id="GraphicSkills"><i class='fab fa-linode'></i> Graphic Programming Skills</button>
 					<button class="btn btn-primary" id="HCISkills"><i class='fas fa-user'></i> <i class='fas fa-laptop'></i> HCI Skills</button>
 					<button class="btn btn-primary" id="UXSkills"><i class='fab fa-pied-piper-alt'></i> UX Skills</button>
+					<button class="btn btn-primary" id="ComSkills"><i class='fas fa-comments'></i> Communication Skills</button>
 					<button class="btn btn-primary" id="CollabSkills"><i class='fas fa-users'></i> Collaboration Skills</button>
-					<button class="btn btn-primary" id="CodeRepoSkills"><i class='fab fa-github'></i> Code Repository Skills</button>
+					<button class="btn btn-primary" id="CodeRepoSkills"><i class='fab fa-github'></i> Code Repository Skills</button></br>
 				</div>
 			</div>
 		</section>
 		<div class="container">
-			<p id=info style="visibility:hidden"></p>
+			<p id=info style="visibility:hidden;"></p>
 				<div class="col-6">
 					<div id="chart" class="container"></div>
 				</div>
 		</div>
-	    <script type="text/javascript" src="vis.js"></script>
+	    <script type="text/javascript" src="TinoVis.js"></script>
 	    <div id="tooltip" style="visibility:hidden;">
-	    	<p><strong>Name of line</strong></p>
 	    </div>
-	<div id="cred">by: <i>Anton Martinsson</i></div>
+	    <div id="cred"><i>by: </i>Anton Martinsson</div>
 	</body>
 </html>
+
